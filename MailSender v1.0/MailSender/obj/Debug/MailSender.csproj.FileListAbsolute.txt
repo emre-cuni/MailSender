@@ -1,0 +1,12 @@
+C:\Users\Cuni\Desktop\Github\MailSender\MailSender\bin\Debug\MailSender.exe.config
+C:\Users\Cuni\Desktop\Github\MailSender\MailSender\bin\Debug\MailSender.exe
+C:\Users\Cuni\Desktop\Github\MailSender\MailSender\bin\Debug\MailSender.pdb
+C:\Users\Cuni\Desktop\Github\MailSender\MailSender\obj\Debug\MailSender.csproj.AssemblyReference.cache
+C:\Users\Cuni\Desktop\Github\MailSender\MailSender\obj\Debug\MailSender.csproj.SuggestedBindingRedirects.cache
+C:\Users\Cuni\Desktop\Github\MailSender\MailSender\obj\Debug\MailSender.Properties.Resources.resources
+C:\Users\Cuni\Desktop\Github\MailSender\MailSender\obj\Debug\MailSender.csproj.GenerateResource.cache
+C:\Users\Cuni\Desktop\Github\MailSender\MailSender\obj\Debug\MailSender.csproj.CoreCompileInputs.cache
+C:\Users\Cuni\Desktop\Github\MailSender\MailSender\obj\Debug\MailSender.exe
+C:\Users\Cuni\Desktop\Github\MailSender\MailSender\obj\Debug\MailSender.pdb
+C:\Users\Cuni\Desktop\Github\MailSender\MailSender\obj\Debug\MailSender.FormLogin.resources
+C:\Users\Cuni\Desktop\Github\MailSender\MailSender\obj\Debug\MailSender.FormMain.resources
