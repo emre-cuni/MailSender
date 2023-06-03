@@ -1,4 +1,0 @@
-28.05.2023
-* formlara icon ekle
-* form start positionlarý ayarla 
-*
