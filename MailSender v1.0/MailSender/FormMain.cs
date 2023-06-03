@@ -22,9 +22,15 @@ namespace MailSender
         {
             try
             {
-                if (textBoxFrom.Text != string.Empty && textBoxTo.Text != string.Empty && textBoxSubject.Text != string.Empty && textBoxBody.Text != string.Empty &&
-                    textBoxFrom.Text != "(Kimden)" && textBoxTo.Text != "(Kime)" && textBoxSubject.Text != "(Konu)" && textBoxBody.Text != "(Mesaj)")
+                if (textBoxFrom.Text != string.Empty && textBoxTo.Text != string.Empty && textBoxBody.Text != string.Empty &&
+                    textBoxFrom.Text != "(Kimden)" && textBoxTo.Text != "(Kime)" && textBoxBody.Text != "(Mesaj)")
                 {
+                    if (textBoxSubject.Text == string.Empty || textBoxSubject.Text == "(Konu)")
+                    {
+                        DialogResult dialogResult = MessageBox.Show("Maili Konu Olmadan Göndermek İstiyor Musunuz?", "UYARI", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                        if (dialogResult == DialogResult.No)
+                            goto finish;
+                    }
                     MailMessage msg = new MailMessage();
                     SmtpClient smtpClient = new SmtpClient();
 
@@ -39,6 +45,7 @@ namespace MailSender
                     msg.Body = textBoxBody.Text;
                     smtpClient.Send(msg);
                     MessageBox.Show("Mail Gönderildi!", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                finish:;
                 }
             }
             catch (SmtpException se)
@@ -70,7 +77,7 @@ namespace MailSender
                     case "(Mesaj)":
                         textBox.Text = string.Empty;
                         break;
-                }               
+                }
                 textBox.ForeColor = Color.Black;
             }
             catch (Exception ex)
